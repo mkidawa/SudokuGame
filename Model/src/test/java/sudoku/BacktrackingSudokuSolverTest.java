@@ -1,17 +1,15 @@
-package com.mycompany.sudoku2;
+package sudoku;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class BacktrackingSudokuSolverTest {
+public class BacktrackingSudokuSolverTest {
 
     @Test
-    void testSolve() {
+    public void testSolve() {
         SudokuBoard instance = new SudokuBoard();
         BacktrackingSudokuSolver solver = new BacktrackingSudokuSolver();
         solver.solve(instance);
         assertTrue(instance.getFlagCheck());
     }
 }
-

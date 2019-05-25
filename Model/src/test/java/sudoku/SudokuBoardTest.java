@@ -3,16 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.sudoku2;
+package sudoku;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static java.lang.Character.UNASSIGNED;
+import static org.junit.Assert.*;
 
-/**
- * @author aleks
- */
 public class SudokuBoardTest {
 
     public SudokuBoardTest() {
@@ -40,7 +37,13 @@ public class SudokuBoardTest {
         solver.solve(instance);
         solver.solve(instance2);
         assertFalse(instance.equals(instance2));
+        assertFalse(instance.getColumn(0).equals(instance2.getColumn(0)));
+        assertFalse(instance.getRow(0).equals(instance2.getRow(0)));
+        assertFalse(instance.getBox(3, 3).equals(instance2.getBox(3, 3)));
+        System.out.print(instance.toString());
+//        System.out.print(instance.getRow(0).toString());
+//        System.out.print(instance.getColumn(0).toString());
+//        System.out.print(instance.getBox(0, 0).toString());
     }
-
 }
     

@@ -1,4 +1,4 @@
-package com.mycompany.sudoku2;
+package sudoku;
 
 public interface SudokuSolver {
     boolean solve(SudokuBoard board);
