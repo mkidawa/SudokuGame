@@ -1,6 +1,12 @@
 package sudoku;
 
+import org.apache.log4j.BasicConfigurator;
+import org.junit.Assert;
 import org.junit.Test;
+import org.apache.log4j.Logger;
+import java.io.IOException;
+import java.sql.*;
+import java.util.ResourceBundle;
 
 import static org.junit.Assert.*;
 

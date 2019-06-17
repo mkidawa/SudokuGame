@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.List;
 
-public class SudokuColumn extends SudokuPart {
+public class SudokuColumn extends SudokuPart implements Cloneable {
     private static final int SIZE = 9;
 
     public String displayColumn() {

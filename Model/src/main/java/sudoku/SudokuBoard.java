@@ -16,7 +16,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 /**
  * Class SudokuBoard - access to sudoku board.
  */
-public class SudokuBoard implements Serializable {
+public class SudokuBoard implements Serializable, Cloneable {
     /**
      * List with 81 sudoku fields.
      */
@@ -68,16 +68,16 @@ public class SudokuBoard implements Serializable {
      *
      * @return if value are properly placed
      */
-    private boolean checkBoard() {
+    public boolean checkBoard() {
         boolean flag1 = true;
         boolean flag2 = true;
         for (int i = 0; i < SIZE; i++) {
-            flag1 = (getRow(i).verify() && getColumn(i).verify());
+            flag1 = flag1 && (getRow(i).verify() && getColumn(i).verify());
         }
 
         for (int i = 0; i < SIZE; i += 3) {
             for (int j = 0; j < SIZE; j += 3) {
-                flag2 = getBox(i, j).verify();
+                flag2 = flag2 && getBox(i, j).verify();
             }
         }
         return flag1 && flag2;
@@ -153,12 +153,20 @@ public class SudokuBoard implements Serializable {
         return sudoku;
     }
 
-    /**
-     * Method that checks if two instances of SudokuBoard class are equal.
-     *
-     * @param obj object to be compared
-     * @return if objects are equal
-     */
+    public static int getSize(){
+        return SIZE;
+    }
+
+    public String boardToConcatString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                stringBuilder.append(get(i , j));
+            }
+        }
+        return stringBuilder.toString();
+    }
+    
     @Override
     public String toString() {
         ToStringBuilder controllerString = new ToStringBuilder(this);
@@ -177,5 +185,10 @@ public class SudokuBoard implements Serializable {
     public int hashCode() {
         return new HashCodeBuilder(17, 37)
                 .append(board).toHashCode();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

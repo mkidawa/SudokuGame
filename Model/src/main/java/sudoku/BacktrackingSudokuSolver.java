@@ -9,7 +9,6 @@ import static java.lang.Character.UNASSIGNED;
 
 public class BacktrackingSudokuSolver implements SudokuSolver {
     private static final int SIZE = 9;
-
     public final boolean solve(final SudokuBoard board) {
         List<Integer> array = randomize();
         for (int row = 0; row < SIZE; row++) {

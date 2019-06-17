@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;
 
-public class SudokuField implements Serializable {
+public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
     private int value;
 
     public final int getFieldValue() {
@@ -20,6 +20,13 @@ public class SudokuField implements Serializable {
     @Override
     public boolean equals(final Object obj) {
         return new EqualsBuilder().append(value, ((SudokuField) obj).value).isEquals();
+    }
+
+    @Override
+    public int compareTo(SudokuField o) {
+        if (this.getFieldValue() == o.getFieldValue()) return 0;
+        else if (this.getFieldValue() > o.getFieldValue()) return 1;
+        else return -1;
     }
 
     @Override

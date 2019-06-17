@@ -44,6 +44,17 @@ public class SudokuBoardTest {
 //        System.out.print(instance.getRow(0).toString());
 //        System.out.print(instance.getColumn(0).toString());
 //        System.out.print(instance.getBox(0, 0).toString());
+
+    }
+
+    @Test
+    public void checkSetField() {
+        SudokuBoard board = new SudokuBoard();
+        BacktrackingSudokuSolver solver = new BacktrackingSudokuSolver();
+        solver.solve(board);
+        board.set(0, 0, 8);
+        assertEquals(8, board.get(0, 0));
+        assertFalse(board.checkBoard());
     }
 }
     

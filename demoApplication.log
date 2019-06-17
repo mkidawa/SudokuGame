@@ -1,0 +1,30 @@
+2019-06-17 16:44:31 DEBUG MenuWindowControl:19 - Otwarto menu
+2019-06-17 16:45:49 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:45:51 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:45:51 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:46:09 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:46:09 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:46:10 INFO  MenuWindowControl:35 - Wybrany poziom trudnosci: Łatwy
+2019-06-17 16:46:12 INFO  MenuWindowControl:136 - Przegrałeś
+2019-06-17 16:46:15 INFO  MenuWindowControl:86 - Wybrano język: angielski
+2019-06-17 16:46:16 INFO  MenuWindowControl:86 - Chosen language: English
+2019-06-17 16:46:18 ERROR MenuWindowControl:41 - Unknown level!
+2019-06-17 16:46:55 ERROR MenuWindowControl:41 - Unknown level!
+2019-06-17 16:46:56 ERROR MenuWindowControl:41 - Unknown level!
+2019-06-17 16:46:56 ERROR MenuWindowControl:41 - Unknown level!
+2019-06-17 16:46:56 ERROR MenuWindowControl:41 - Unknown level!
+2019-06-17 16:47:12 DEBUG MenuWindowControl:19 - Otwarto menu
+2019-06-17 16:47:18 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:22 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:22 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:26 DEBUG JdbcSudokuBoardDao:25 - Połączono z bazą danych 
+2019-06-17 16:47:26 DEBUG JdbcSudokuBoardDao:37 - Tabela utworzona
+2019-06-17 16:47:26 DEBUG JdbcSudokuBoardDao:57 - Dane zostałe umieszczone w tabeli
+2019-06-17 16:47:38 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:39 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:39 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:39 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:39 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:40 INFO  MenuWindowControl:38 - Wybrany poziom trudnosci: Średni
+2019-06-17 16:47:41 DEBUG JdbcSudokuBoardDao:25 - Połączono z bazą danych 
+2019-06-17 16:47:41 DEBUG JdbcSudokuBoardDao:71 - Dane odczytane z bazy danych

@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.List;
 
-public class SudokuBox extends SudokuPart {
+public class SudokuBox extends SudokuPart implements Cloneable{
     public String displayBox() {
         String box = new String();
         List<SudokuField> newBox = getContainer();
